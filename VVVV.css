@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.lg-t {
+    width: 102px;
+    height: 43px;
+}
+
+.bg-os {
+    background-color: #ffffff;
+    background-size: cover;
+}
+
+.o-s-h {
+    color: #183b56;
+    font-size: 35px;
+    margin-top: 22px;
+    padding: 8px;
+    font-weight: bold;
+
+}
+
+.b-h {
+    color: #1f2933;
+    font-size: 18px;
+
+}
+
+.b-p {
+    color: #7b8794;
+    font-size: 12px;
+}
+
+.hh {
+    width: 210px;
+
+    padding: 12px;
+
+}
+
+.os-ph {
+    height: 67px;
+    width: 67px;
+
+}
+
+.o-s-p {
+    color: #616c7c;
+    font-size: 17px;
+    text-align: left;
+    padding: 8px;
+}
+
+.bg-shop1 {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-products-headphones-bg.png");
+    background-size: cover;
+    height: 235px;
+    border-radius: 11px;
+}
+
+.phjj {
+    color: #323f4b;
+    font-weight: bold;
+}
+
+.bg-shop2 {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-products-laptops-bg.png");
+    background-size: cover;
+    height: 235px;
+    border-radius: 11px;
+}
+
+.bb {
+    color: #ff9f00;
+    border-radius: 16px;
+
+}
+
+.bg1-shop {
+    background-color: #ffffff;
+
+}
+
+.o-p {
+    color: #183b56;
+    font-size: 33px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.p-shop {
+    color: #ffffff;
+    font-size: 12px;
+    padding-left: 9px;
+
+
+}
+
+.h-shop {
+    color: #ffffff;
+    font-size: 33px;
+    padding-top: 33px;
+    font-weight: bold;
+    padding-left: 9px;
+}
+
+.h-shop2 {
+    color: #ffffff;
+    font-size: 33px;
+    padding-top: 77px;
+    font-weight: bold;
+    padding-left: 9px;
+}
+
+.linear-gradient {
+    background-image: linear-gradient(to right, #f49541, #dd5d97);
+
+}
+
+.Bh {
+    color: #ad2167;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: "Bree Serif";
+
+}
+
+.B-P {
+    color: #ffffff;
+    font-size: 17px;
+
+}
+
+.Id-p {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: bold;
+
+}
+
+.Id {
+    color: yellow;
+    font-weight: bold;
+}
+
+.br {
+    font-weight: bold;
+}
+
+.t {
+    text-align: center;
+    font-size: 7px;
+}
+
+.d-i {
+    height: 225px;
+    width: 225px;
+}
+
+.d-i-2 {
+    height: 115px;
+    width: 115px;
+}
+
+.d-i2 {
+    height: 200px;
+    width: 300px;
+}
+
+.ic-d {
+    height: 105px;
+    width: 275px;
+}
+
+.h-trb {
+    color: #183b56;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.des-p {
+    color: #959ead;
+    font-size: 20px;
+
+
+}
+
+.fh {
+    color: #959ead;
+    font-weight: normal;
+    font-size: 12px;
+    padding: 2px;
+    margin-left: 12px;
+}
+
+.gh {
+    color: #183b56;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.read {
+    color: #ff9f00;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.bg-trb {
+    background-color: #ffffff;
+    background-size: cover;
+}
+
+.bg-ed {
+    background-color: #f5f7fa;
+    background-size: cover;
+}
+
+.h-e {
+    color: #183b56;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.h-description {
+    font-size: 14px;
+    padding: 7px;
+    text-align: center;
+}
+
+.imj {
+    height: 100px;
+    border-radius: 14px;
+    width: 120px;
+}
+
+.seealldetails {
+    color: orange;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 9px;
+}
+
+.tv-img {
+    border-radius: 13px;
+    width: 260px;
+}
+
+.inner-top-h {
+    color: #183b56;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.i-bg {
+    background-color: #ffffff;
+    background-size: cover;
+}
+
+.jt-bg {
+    background-color: #f5f7fa;
+    background-size: cover;
+}
+
+.h-l {
+    color: #183b56;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.c-jt {
+    border-color: #ff9f00;
+    border-radius: 1px;
+    color: #ff9f00;
+    border-width: 2px;
+    width: 150px;
+    background-color: transparent;
+}
+
+.bg-foot-section {
+    background-color: #0d2436;
+    background-size: cover;
+}
+
+.icon {
+    height: 50px;
+    width: 150px;
+}
+
+.tt-b {
+    color: #5a7184;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.c {
+    color: #5a7184;
+}
+
+.hr-p {
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hr {
+    background-color: #5a7184;
+}
+
+.hj-b {
+    color: #5a7184;
+    font-size: 15px;
+    list-style-type: none;
+
+    padding: 0px;
+}
+
+.add {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.icon-foot {
+    color: #5a7184;
+    background-color: #152c3e;
+    border-width: 2px;
+    border-radius: 40px;
+    padding: 9px;
+
+}

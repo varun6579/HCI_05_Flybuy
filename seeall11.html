@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a97adbaba0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="VVVV.css"/>
+    <title>Electronic Devices Listing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .back-button-container {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+        }
+        .btn-back {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 1em;
+        }
+        .device-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 15px;
+            padding: 15px;
+            width: 250px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .device-card:hover {
+            transform: scale(1.05);
+        }
+        .device-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .device-name {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        .device-description {
+            color: #666;
+            font-size: 0.9em;
+            margin: 10px 0;
+        }
+        .device-price {
+            color: #28a745;
+            font-size: 1.2em;
+        }
+        .btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Responsive design adjustments */
+        @media (max-width: 768px) {
+            .device-card {
+                width: 100%;
+                max-width: 300px;
+                margin: 10px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            .btn-back {
+                font-size: 0.8em;
+            }
+        }
+        .vj{
+          color: gold;
+        }
+        .home-icon-container {
+            position: fixed;
+            top: 20px;
+            right: 20px; /* Positions the icon on the top-right side */
+        }
+        .btn-home {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .btn-home i {
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+        .btn-home:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="home-icon-container">
+        <button class="btn-home" onclick="goToHome()">
+            <i class="fas fa-home"></i> Home
+        </button>
+    </div>
+
+    <h1>Electronic Devices <span class="vj">75%</span> Off Now</h1>
+    <div style="position: absolute; top: 10px; left: 10px;">
+        
+        <i class="fas fa-arrow-left" onclick="goBack()"></i> 
+ 
+</div>
+
+    <div class="container">
+        <!-- Smartphone -->
+        <div class="device-card">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-tablet-device-img.png" alt="Smartphone" class="device-image">
+            <h2 class="device-name">SmartWatch</h2>
+            <p class="device-description">Budget-friendly smartphone with a powerful processor.</p>
+            <p class="device-price">₹3,499</p>
+            <button class="btn" onclick="addToCart('SmartWatch', 3499)">Buy Now</button>
+        </div>
+
+        <!-- Game Set -->
+        <div class="device-card">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-joy-stick-img.png" alt="Game Set" class="device-image">
+            <h2 class="device-name">Game Set</h2>
+            <p class="device-description">A fun-filled game set for children to improve creativity.</p>
+            <p class="device-price">₹1,799</p>
+            <button class="btn" onclick="addToCart('Game Set', 1799)">Buy Now</button>
+        </div>
+
+        <!-- Speaker Set -->
+        <div class="device-card">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-speakers-big-img.png" alt="Speaker Set" class="device-image">
+            <h2 class="device-name">Speaker Set</h2>
+            <p class="device-description">Wireless speaker set with superior sound quality.</p>
+            <p class="device-price">₹3,999</p>
+            <button class="btn" onclick="addToCart('Speaker Set', 3999)">Buy Now</button>
+        </div>
+
+        <!-- AR VR Kit -->
+        <div class="device-card">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-vr-set-img.png" alt="AR VR Kit" class="device-image">
+            <h2 class="device-name">AR VR Kit</h2>
+            <p class="device-description">Explore augmented and virtual reality with this affordable VR kit.</p>
+            <p class="device-price">₹2,999</p>
+            <button class="btn" onclick="addToCart('AR VR Kit', 2999)">Buy Now</button>
+        </div>
+        <div class="device-card">
+          <img src="https://img.freepik.com/free-photo/smartphone-nature-concept_23-2150246099.jpg" alt="Smartphone" class="device-image">
+          <h2 class="device-name">Smartphone</h2>
+          <p class="device-description">Budget-friendly smartphone with a powerful processor.</p>
+          <p class="device-price">₹3,499</p>
+          <button class="btn" onclick="addToCart('Smartphone', 3499)">Buy Now</button>
+      </div>
+
+      <!-- Game Set -->
+      <div class="device-card">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-joy-stick-img.png" alt="Game Set" class="device-image">
+          <h2 class="device-name">Game Set</h2>
+          <p class="device-description">A fun-filled game set for children to improve creativity.</p>
+          <p class="device-price">₹1,799</p>
+          <button class="btn" onclick="addToCart('Game Set', 1799)">Buy Now</button>
+      </div>
+
+      <!-- Speaker Set -->
+      <div class="device-card">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-speakers-big-img.png" alt="Speaker Set" class="device-image">
+          <h2 class="device-name">Speaker Set</h2>
+          <p class="device-description">Wireless speaker set with superior sound quality.</p>
+          <p class="device-price">₹3,999</p>
+          <button class="btn" onclick="addToCart('Speaker Set', 3999)">Buy Now</button>
+      </div>
+
+      <!-- AR VR Kit -->
+      <div class="device-card">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-explore-vr-set-img.png" alt="AR VR Kit" class="device-image">
+          <h2 class="device-name">AR VR Kit</h2>
+          <p class="device-description">Explore augmented and virtual reality with this affordable VR kit.</p>
+          <p class="device-price">₹2,999</p>
+          <button class="btn" onclick="addToCart('AR VR Kit', 2999)">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="back-button-container">
+        <button class="btn-back" onclick="goBack()">Back</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        function addToCart(name, price) {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ name, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            window.location.href = 'cart.html';
+        }
+        function goToHome() {
+            window.location.href = 'VVVV.html'; // Replace 'index.html' with your homepage URL
+        }
+    </script>
+</body>
+</html>
